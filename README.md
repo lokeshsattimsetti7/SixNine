@@ -3,7 +3,7 @@ A premium, responsive skincare brand landing page built using ReactJS, GSAP, and
 
 🚀 Live Demo
 🔗 View Live Website:https://six-nine-git-main-lokeshsattimsetti7s-projects.vercel.app/
-📁 View Full Repository
+
 
 🛠️ Tech Stack
 ReactJS
