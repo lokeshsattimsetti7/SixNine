@@ -6,11 +6,16 @@
     background-color: #FEFFF4;
 }
 
+
+
+
+
 .LeftContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
 }
 
 .LeftContainer button {
@@ -21,7 +26,7 @@
     color: #2D3B36;
     border: none;
     border: 1px solid #2D3B36;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .LeftContainer h1 {
@@ -31,7 +36,7 @@
     line-height: 100%;
     letter-spacing: -2%;
     color: #2D3B36;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .LeftContainer h5 {
@@ -40,13 +45,14 @@
     line-height: 24px;
     letter-spacing: -2%;
     font-size: 18px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .Block {
     display: flex;
     flex-direction: row;
     gap: 50px;
+
 }
 
 .Block h2 {
@@ -140,8 +146,8 @@
 }
 
 .Rectangle img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     padding: 15px;
     border-radius: 200px;
     background-color: #2D3B36;
@@ -163,6 +169,8 @@
     list-style: none;
     margin-top: 30px;
 }
+
+
 
 @media (min-width: 320px) and (max-width:600px) {
     .MainSection {

@@ -37,15 +37,17 @@ const Product = () => {
   return (
     <div className={styles.MainSection}>
       <div className={styles.UpperSection}>
-        <button className={styles.TopButton}>Best Selling Products</button>
+        <button className={styles.TopButton}>
+          <div className={styles.dot}></div>Best Selling Products
+        </button>
         <h1>Skincare That Brings Out Your Natural Radiance</h1>
         <div className={styles.ScrollButtons}>
-          <button onClick={scrollLeft}>
+          <h3 onClick={scrollLeft}>
             <i className="fa-solid fa-arrow-left-long"></i>
-          </button>
-          <button onClick={scrollRight}>
+          </h3>
+          <h3 onClick={scrollRight}>
             <i className="fa-solid fa-arrow-right-long"></i>
-          </button>
+          </h3>
         </div>
       </div>
 

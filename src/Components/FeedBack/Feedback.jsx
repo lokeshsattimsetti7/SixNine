@@ -46,35 +46,11 @@ const Feedback = () => {
         </div>
       </div>
       <div className={styles.RightSide}>
-        <button>Frequently Asked Question</button>
+        <button>
+          <div className={styles.dot}></div>Frequently Asked Question
+        </button>
         <h1>Answers to Your Skincare Questions, All in One Place.</h1>
-        {/* <div className={styles.BoxSection}>
-          <div className={styles.BorderBox}>
-            <p>
-              Are your products safe for sensitive skin? <span>+</span>
-            </p>
-          </div>
-          <div className={styles.BorderBox}>
-            <p>
-              Are your products cruelty-free?<span>+</span>
-            </p>
-          </div>
-          <div className={styles.BorderBox}>
-            <p>
-              What’s your return policy?<span>+</span>
-            </p>
-          </div>
-          <div className={styles.BorderBox}>
-            <p>
-              Do you ship internationally? <span>+</span>
-            </p>
-          </div>
-          <div className={styles.BorderBox}>
-            <p>
-              How do i choose the right product? <span>+</span>
-            </p>
-          </div>
-        </div> */}
+
         <div className={styles.BoxSection}>
           {faqData.map((item, index) => (
             <div key={index} className={styles.BorderBox}>
