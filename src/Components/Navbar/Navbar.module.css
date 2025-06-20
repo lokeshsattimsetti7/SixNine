@@ -1,0 +1,98 @@
+.MainSection {
+    padding: 50px 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EFF5E1;
+}
+
+.SectionOne h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #2D3B36;
+}
+
+.SectionTwo ul {
+    display: flex;
+    gap: 81px;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    size: 20px;
+    text-decoration: none;
+    line-height: 100%;
+    letter-spacing: 5%;
+    color: #2D3B36;
+}
+
+.SectionThree {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.SectionThree h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    size: 20px;
+    line-height: 100%;
+    letter-spacing: -5%;
+    color: #2D3B36;
+}
+
+.SectionThree button {
+    border: none;
+    background-color: #F8FEE5;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+@media (min-width: 320px) and (max-width:600px) {
+    .MainSection {
+        padding: 30px 30px 98px 30px;
+    }
+
+    .SectionOne h1 {
+        font-size: 20px;
+    }
+
+    .SectionTwo ul {
+        display: none;
+    }
+
+    .SectionThree h2 {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) and (max-width:900px) {
+    .MainSection {
+        padding: 40px 50px 0px;
+    }
+
+    .SectionOne h1 {
+        font-size: 25px;
+    }
+
+    .SectionTwo ul {
+        gap: 30px;
+        size: 14px;
+    }
+
+    .SectionThree h2 {
+        display: none;
+    }
+
+    .SectionThree button {
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+    }
+
+}

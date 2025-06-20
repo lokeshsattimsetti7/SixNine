@@ -1,0 +1,266 @@
+.MainSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+}
+
+.UpperSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.UpperSection h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-align: center;
+}
+
+.UpperSection button {
+    width: 260px;
+    height: 60px;
+    background-color: #FEFFF4;
+    border-radius: 100px;
+    color: #2D3B36;
+    border: none;
+    border: 1px solid #2D3B36;
+}
+
+.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #2D3B36;
+    border-radius: 50%;
+    margin-left: 19px;
+    margin-top: -3px;
+}
+
+.UpperSection i {
+    color: #2D3B36;
+    border: 1px solid #2D3B36;
+    padding: 40px;
+    border-radius: 140px;
+    font-size: 30px;
+
+}
+
+.UpperSection i:hover {
+    color: #EFF5E1;
+    background-color: #2D3B36;
+}
+
+.ScrollButtons {
+    display: flex;
+    gap: 80px;
+
+}
+
+.ScrollButtons button {
+    border: none;
+}
+
+.LowerSection {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 300px;
+    scroll-behavior: smooth;
+}
+
+.LowerSection::-webkit-scrollbar {
+    display: none;
+}
+
+.ProductSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 250px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.ProductSection img {
+    width: 560px;
+    height: 770px;
+    border-radius: 20px;
+}
+
+.Card {
+    display: flex;
+    align-items: center;
+    gap: 211px;
+    position: absolute;
+    display: flex;
+    background-color: #FEFFF4;
+    width: 520px;
+    height: 100px;
+    border-radius: 10px;
+    left: 20px;
+    bottom: 10px;
+
+}
+
+.Card h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #2D3B36;
+    line-height: 100%;
+    letter-spacing: -5%;
+    margin: 0px 0px 33px 20px;
+}
+
+.Card p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -5%;
+    color: #2D3B3680;
+    margin: 0px 0px 0px 20px;
+}
+
+.Buy {
+    display: flex;
+    background-color: #2D3B361A;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.Buy:hover {
+    background-color: #2D3B36;
+}
+
+.Buy img {
+    width: 30px;
+    height: 30px;
+}
+
+.Arrow {
+    display: flex;
+    gap: 80px;
+}
+
+
+
+
+
+
+
+
+.LowerSection {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+
+.Card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Buy img {
+    width: 24px;
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width:600px) {
+    .MainSection {
+        padding: 0px 30px;
+    }
+
+    .UpperSection {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+    }
+
+    .UpperSection h1 {
+        font-size: 34px;
+        line-height: 100%;
+        letter-spacing: -5%;
+        text-align: left;
+        margin-bottom: 50px;
+
+    }
+
+    .UpperSection button {
+        width: 242px;
+        height: 50px;
+        margin-bottom: 50px;
+    }
+
+    .UpperSection i {
+        padding: 30px;
+        border-radius: 90px;
+        font-size: 20px;
+
+    }
+
+
+    .ScrollButtons {
+        gap: 0px;
+
+    }
+
+    .ProductSection img {
+        width: 322px;
+        height: 470px;
+        border-radius: 20px;
+    }
+
+    .Card {
+        gap: 73px;
+        width: 296px;
+        height: 61px;
+        border-radius: 10px;
+        left: 10px;
+        bottom: 10px;
+
+    }
+
+    .Buy {
+        width: 47px;
+        height: 47px;
+    }
+
+    .Buy img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .Card h1 {
+        font-size: 14px;
+        margin: 0px 0px 22px 15px;
+    }
+
+    .Card p {
+        font-size: 12px;
+        letter-spacing: -5%;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .LowerSection {
+
+        margin-bottom: 100px;
+    }
+
+}

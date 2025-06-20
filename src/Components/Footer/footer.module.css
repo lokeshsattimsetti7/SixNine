@@ -1,0 +1,259 @@
+.MainSection {
+    width: 100%;
+    height: 930px;
+    gap: 651px;
+    display: flex;
+    flex-direction: row;
+    background-color: #2D3B36;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.LeftContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 270px;
+    padding-left: 100px;
+    padding-top: 200px;
+    padding-bottom: 328px;
+}
+
+.LeftContainer h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #E7E8E0;
+    margin: 0px;
+
+}
+
+.LeftContainer ul {
+    list-style: none;
+    display: flex;
+    gap: 93px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.LeftContainer ul li {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -5%;
+    color: #E7E8E0;
+
+}
+
+.RightContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    padding-right: 100px;
+    padding-top: 200px;
+    padding-bottom: 328px;
+}
+
+.RightContainer h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #E7E8E0;
+    margin-bottom: 0px;
+}
+
+.RightContainer p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #E7E8E0;
+    margin-top: 0px;
+}
+
+.RightContainer ul li {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -5%;
+    color: #E7E8E0;
+
+}
+
+.RightContainer ul {
+    list-style: none;
+    display: flex;
+    gap: 93px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.FirstRow {
+    display: flex;
+    padding: 200px 100px 270px 100px;
+    gap: 651px;
+}
+
+
+
+.FirstRow h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #E7E8E0;
+    margin-bottom: 0px;
+}
+
+.FirstRow p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #E7E8E0;
+    margin-top: 0px;
+}
+
+.Media {
+    display: flex;
+    gap: 651px;
+    padding: 0px 100px;
+}
+
+.Media ul {
+    list-style: none;
+    display: flex;
+    gap: 93px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+    /* margin-bottom: 100px; */
+}
+
+.Media ul li {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -5%;
+    color: #E7E8E0;
+
+}
+
+.LastTxt {
+    position: absolute;
+    bottom: -120px;
+}
+
+.LastTxt h6 {
+    font-family: "Inter", sans-serif;
+    font-size: 400px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #3D4B4680;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+@media (min-width: 320px) and (max-width:600px) {
+    .MainSection {
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        gap: 29px;
+        width: 430px;
+
+    }
+
+    .LeftContainer {
+        gap: 80px;
+        padding-left: 30px;
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    .LeftContainer h1 {
+        font-size: 34px;
+
+
+    }
+
+    .LeftContainer ul {
+        gap: 74px;
+    }
+
+    .LeftContainer ul li {
+        font-size: 14px;
+    }
+
+
+
+    .RightContainer {
+        gap: 80px;
+        padding-left: 30px;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 0px;
+    }
+
+    .RightContainer h2 {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .RightContainer p {
+        font-size: 34px;
+
+    }
+
+    .RightContainer ul li {
+        font-size: 10px;
+
+    }
+
+    .RightContainer ul {
+        gap: 84px;
+    }
+
+    .LastTxt h6 {
+        font-size: 90px;
+    }
+
+    .LastTxt {
+        position: absolute;
+        bottom: -30px;
+    }
+
+
+
+}
