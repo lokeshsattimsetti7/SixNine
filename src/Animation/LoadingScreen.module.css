@@ -1,0 +1,31 @@
+.screen {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.title {
+    font-size: clamp(3rem, 10vw, 8rem);
+    font-weight: 900;
+    color: #EFF5E1;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* Percentage counter */
+.percent {
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-family: "Inter", sans-serif;
+    color: #EFF5E1;
+    user-select: none;
+}

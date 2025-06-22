@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./Care.module.css";
-import peel from "./ChatGPT Image Jun 15, 2025, 11_52_20 PM 1.png";
+import peel from "./Jun 15, 2025, 11_52_20 PM 2.png";
 import Star from "./award-svgrepo-com 1 (1).png";
 const Care = () => {
   return (

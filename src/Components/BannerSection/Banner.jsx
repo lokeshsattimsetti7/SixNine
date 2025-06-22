@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./Banner.module.css";
 import gsap from "gsap";
-import Paste from "./skin_care_beauty_cosmetic_packaging_design_agency_mumbai_delhi_bangalore_india 1.png";
+import Paste from "./skin_care_beauty_cosmetic_packaging_design_agency_mumbai_delhi_bangalore_india 4.png";
 import Girl from "./ChatGPT Image Jun 15, 2025, 10_24_47 PM 3.png";
 import Logo from "./skin_care_beauty_cosmetic_packaging_design_agency_mumbai_delhi_bangalore_india 2.png";
 
@@ -36,29 +36,53 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className={styles.MainSection} ref={bannerRef}>
-      <div className={styles.UpperSection}>
-        <p ref={textRef}>
-          Transform your skincare routine with premium products that restore,
-          protect, and enhance your natural glow every day.
-        </p>
+    <div>
+      <div className={styles.Desktop}>
+        <div className={styles.MainSection} ref={bannerRef}>
+          <div className={styles.UpperSection}>
+            <p ref={textRef}>
+              Transform your skincare routine with premium products that
+              restore, protect, and enhance your natural glow every day.
+            </p>
 
-        <h1 ref={headingRef} className={styles.GlowText}>
-          <span className={styles.Desktop}> GLOW NATUR-ALLY</span>
-          <span className={styles.Mobile}>GLOWWWW NATURALLY</span>
-        </h1>
+            <h1 ref={headingRef} className={styles.GlowText}>
+              <span> GLOW NATUR-ALLY</span>
+            </h1>
+            <img ref={imageRef} src={Paste} alt="cream" />
+          </div>
 
-        <img ref={imageRef} src={Paste} alt="cream" />
+          <div className={styles.LowerSection}>
+            <button>Shop Now</button>
+            <img src={Girl} alt="model" className={styles.Girl} />
+            <div className={styles.Block}>
+              <p> While giving you an invigorating cleansing experience.</p>
+              <img src={Logo} alt="logo" />
+            </div>
+            <h1>SKIN CARE</h1>
+          </div>
+        </div>
       </div>
 
-      <div className={styles.LowerSection}>
-        <button>Shop Now</button>
-        <img src={Girl} alt="model" className={styles.Girl} />
-        <div className={styles.Block}>
-          <p> While giving you an invigorating cleansing experience.</p>
-          <img src={Logo} alt="logo" />
+      <div className={styles.Mobile}>
+        <div className={styles.MainSection} ref={bannerRef}>
+          <div className={styles.UpperSection}>
+            <h2>GLOWWWW NATURALLY</h2>
+            <p ref={textRef}>
+              Transform your skincare routine with premium products that
+              restore, protect, and enhance your natural glow every day.
+            </p>
+            <img src={Girl} alt="model" className={styles.Girl} />
+            <div className={styles.Block}>
+              <p> While giving you an invigorating cleansing experience.</p>
+              <img src={Logo} alt="logo" />
+            </div>
+            <h1>SKINCARE</h1>
+            <div className={styles.LastSection}>
+              <img ref={imageRef} src={Paste} alt="cream" />
+              <button>Shop Now</button>
+            </div>
+          </div>
         </div>
-        <h1>SKIN CARE</h1>
       </div>
     </div>
   );

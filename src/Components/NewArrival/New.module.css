@@ -177,7 +177,7 @@
     }
 
     .LowerSection {
-        display: none;
+        flex-direction: column;
     }
 
 

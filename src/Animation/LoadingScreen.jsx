@@ -1,45 +1,36 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import styles from "./LoadingScreen.module.css";
 
-const LoadingScreen = ({ onComplete }) => {
-  const leftDoor = useRef(null);
-  const rightDoor = useRef(null);
-  const container = useRef(null);
+export default function LoadingScreen({ onComplete = () => {} }) {
+  const screenRef = useRef(null);
+  const [percent, setPercent] = useState(0);
 
   useEffect(() => {
-    const tl = gsap.timeline({
+    // Animate percentage count
+    const counter = { value: 0 };
+    gsap.to(counter, {
+      value: 100,
+      duration: 3,
+      ease: "power2.out",
+      onUpdate: () => setPercent(Math.round(counter.value)),
       onComplete: () => {
-        if (onComplete) onComplete();
+        gsap.to(screenRef.current, {
+          autoAlpha: 0,
+          duration: 0.8,
+          onComplete,
+        });
       },
     });
-
-    tl.to(leftDoor.current, {
-      x: "-100%",
-      duration: 1.2,
-      ease: "power4.inOut",
-    })
-      .to(
-        rightDoor.current,
-        {
-          x: "100%",
-          duration: 1.2,
-          ease: "power4.inOut",
-        },
-        "<"
-      )
-      .to(container.current, {
-        opacity: 0,
-        pointerEvents: "none",
-        duration: 0.3,
-      });
-  }, []);
+  }, [onComplete]);
 
   return (
-    <div ref={container} className="fixed inset-0 z-50 flex">
-      <div ref={leftDoor} className="w-1/2 h-full bg-[#1a1a1a]"></div>
-      <div ref={rightDoor} className="w-1/2 h-full bg-[#1a1a1a]"></div>
+    <div className={styles.screen} ref={screenRef}>
+      {/* SKIN CARE big text */}
+      <h1 className={styles.title}>SKIN CARE</h1>
+
+      {/* Percentage in bottom-right corner */}
+      <span className={styles.percent}>{percent}%</span>
     </div>
   );
-};
-
-export default LoadingScreen;
+}

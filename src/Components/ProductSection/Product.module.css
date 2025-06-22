@@ -4,12 +4,15 @@
     padding: 0px 100px;
 }
 
+.Mobile {
+    display: none;
+}
+
 .UpperSection {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 
 }
 
@@ -24,7 +27,7 @@
     margin-left: 170px;
 }
 
-.UpperSection button {
+.MainSection button {
     width: 300px;
     height: 60px;
     background-color: #FEFFF4;
@@ -44,7 +47,7 @@
     margin-top: -3px;
 }
 
-.UpperSection i {
+.MainSection i {
     color: #2D3B36;
     border: 1px solid #2D3B36;
     padding: 30px;
@@ -53,7 +56,7 @@
 
 }
 
-.UpperSection i:hover {
+.MainSection i:hover {
     color: #EFF5E1;
     background-color: #2D3B36;
 }
@@ -91,7 +94,7 @@
 
 .ProductSection img {
     width: 560px;
-    height: 770px;
+    height: 670px;
     border-radius: 20px;
 }
 
@@ -186,10 +189,16 @@
         padding: 0px 30px;
     }
 
+    .Desktop {
+        display: none;
+    }
+
     .UpperSection {
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin: 0px;
+        justify-content: left;
+        align-items: left;
 
     }
 
@@ -198,18 +207,19 @@
         line-height: 100%;
         letter-spacing: -5%;
         text-align: left;
-        margin-bottom: 50px;
+        margin: 0px 0px 0px 0px;
 
     }
 
-    .UpperSection button {
+    .MainSection button {
         width: 242px;
         height: 50px;
         margin-bottom: 50px;
+
     }
 
-    .UpperSection i {
-        padding: 30px;
+    .MainSection i {
+        padding: 20px;
         border-radius: 90px;
         font-size: 20px;
 
@@ -217,8 +227,10 @@
 
 
     .ScrollButtons {
-        gap: 0px;
-
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
     }
 
     .ProductSection img {

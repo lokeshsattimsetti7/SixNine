@@ -230,7 +230,7 @@
     .RightContainer img {
         width: 402px;
         height: 512px;
-        border-radius: 30px;
+        border-radius: 0px;
 
     }
 
@@ -244,9 +244,13 @@
     }
 
     .Rectangle img {
-        height: 30px;
-        width: 30px;
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+        border-radius: 200px;
+        margin-left: 10px;
     }
+
 
     .Rectangle p {
         margin-right: 0px;

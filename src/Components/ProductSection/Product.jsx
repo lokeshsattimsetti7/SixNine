@@ -41,13 +41,15 @@ const Product = () => {
           <div className={styles.dot}></div>Best Selling Products
         </button>
         <h1>Skincare That Brings Out Your Natural Radiance</h1>
-        <div className={styles.ScrollButtons}>
-          <h3 onClick={scrollLeft}>
-            <i className="fa-solid fa-arrow-left-long"></i>
-          </h3>
-          <h3 onClick={scrollRight}>
-            <i className="fa-solid fa-arrow-right-long"></i>
-          </h3>
+        <div className={styles.Desktop}>
+          <div className={styles.ScrollButtons}>
+            <h3 onClick={scrollLeft}>
+              <i className="fa-solid fa-arrow-left-long"></i>
+            </h3>
+            <h3 onClick={scrollRight}>
+              <i className="fa-solid fa-arrow-right-long"></i>
+            </h3>
+          </div>
         </div>
       </div>
 
@@ -66,6 +68,16 @@ const Product = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className={styles.Mobile}>
+        <div className={styles.ScrollButtons}>
+          <h3 onClick={scrollLeft}>
+            <i className="fa-solid fa-arrow-left-long"></i>
+          </h3>
+          <h3 onClick={scrollRight}>
+            <i className="fa-solid fa-arrow-right-long"></i>
+          </h3>
+        </div>
       </div>
     </div>
   );

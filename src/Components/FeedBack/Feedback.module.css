@@ -5,6 +5,10 @@
     background-color: #FEFFF4;
 }
 
+.Mobile {
+    display: none;
+}
+
 .LeftSide {
     position: relative;
 }
