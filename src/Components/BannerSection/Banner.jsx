@@ -48,16 +48,19 @@ const Banner = () => {
             <h1 ref={headingRef} className={styles.GlowText}>
               <span> GLOW NATUR-ALLY</span>
             </h1>
-            <img ref={imageRef} src={Paste} alt="cream" />
+            <img src={Paste} alt="cream" />
           </div>
 
           <div className={styles.LowerSection}>
             <button>Shop Now</button>
-            <img src={Girl} alt="model" className={styles.Girl} />
-            <div className={styles.Block}>
-              <p> While giving you an invigorating cleansing experience.</p>
-              <img src={Logo} alt="logo" />
+            <div className={styles.MiddleSection}>
+              <img src={Girl} alt="model" className={styles.Girl} />
+              <div className={styles.Block}>
+                <p> While giving you an invigorating cleansing experience.</p>
+                <img src={Logo} alt="logo" />
+              </div>
             </div>
+
             <h1>SKIN CARE</h1>
           </div>
         </div>
