@@ -62,28 +62,6 @@ const Banner = () => {
           </div>
         </div>
       </div>
-
-      <div className={styles.Mobile}>
-        <div className={styles.MainSection} ref={bannerRef}>
-          <div className={styles.UpperSection}>
-            <h2>GLOWWWW NATURALLY</h2>
-            <p ref={textRef}>
-              Transform your skincare routine with premium products that
-              restore, protect, and enhance your natural glow every day.
-            </p>
-            <img src={Girl} alt="model" className={styles.Girl} />
-            <div className={styles.Block}>
-              <p> While giving you an invigorating cleansing experience.</p>
-              <img src={Logo} alt="logo" />
-            </div>
-            <h1>SKINCARE</h1>
-            <div className={styles.LastSection}>
-              <img ref={imageRef} src={Paste} alt="cream" />
-              <button>Shop Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
