@@ -43,18 +43,7 @@
 
 }
 
-.Plum {
-    display: none;
-}
 
-
-.Desktop {
-    display: inline;
-}
-
-.Mobile {
-    display: none;
-}
 
 .LowerSection {
     display: flex;
@@ -139,116 +128,41 @@
 }
 
 @media (min-width: 320px) and (max-width:600px) {
-    .Desktop {
-        display: none;
-    }
-
-    .Mobile {
-        display: inline;
-        margin: 0px;
-    }
-
     .MainSection {
-        padding-top: 0px;
+        padding-top: 20px;
+
     }
 
     .UpperSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        padding: 0px;
-        position: relative;
+        padding: 0px 30.39px 0px 30px;
     }
 
     .UpperSection p {
-        margin: 0px;
-        font-size: 16px;
-        line-height: 22px;
-        letter-spacing: -5%;
-        text-align: left;
-        text-indent: 0px;
-        padding: 30px 30px 0px;
-    }
-
-
-    .UpperSection h2 {
-        font-family: "Inter", sans-serif;
-        font-weight: 900;
-        font-size: 70px;
-        line-height: 60px;
-        letter-spacing: -5%;
-        color: #2D3B36;
+        margin-right: 0;
     }
 
     .UpperSection h1 {
-        position: absolute;
-        margin: 0px;
-        font-size: 75px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        bottom: 200px;
-        font-weight: 800;
+        font-size: 80px;
+        margin-right: 0;
+
     }
 
-    .Girl {
-        position: relative;
-        width: 402px;
-        height: 441px;
-        border-radius: 0px;
-        padding-top: 50px;
-        left: 0px;
-        right: 0px;
+    .LowerSection {
+        margin-top: 30px;
     }
 
-    .Block {
-        width: 332px;
-        height: 80px;
-        position: absolute;
-        left: 35px;
-        right: 0px;
-        top: 546px
+    .LowerSection h1 {
+        font-size: 156px;
+        margin: 0;
+
     }
 
-    .Block p {
-        font-size: 14px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        margin-left: 100px;
-        padding: 0px;
-    }
-
-    .Block img {
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        left: 10px;
-        border-radius: 110px;
-    }
-
-    .UpperSection button {
-        background-color: #2D3B36;
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        border: none;
-        width: 178px;
-        height: 50px;
-        line-height: 100%;
-        color: #EFF5E1;
-        border-radius: 100px;
-        /* position: absolute; */
-        left: 100px;
-        margin-bottom: 40px;
-    }
-
-    .LastSection {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-
-    .UpperSection img {
-        /* width: 402px;
-        height: 399px; */
+    .LowerSection button {
+        display: none;
     }
 
 
