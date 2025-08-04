@@ -43,26 +43,74 @@
 }
 
 
-
 .LowerSection {
     display: flex;
     flex-direction: column;
     position: relative;
     margin-top: 100px;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .LowerSection h1 {
+    position: absolute;
+    bottom: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: "Inter", sans-serif;
     font-weight: 800;
-    font-size: 356px;
+    font-size: clamp(200px, calc(12vw + 50px), 378px);
+    width: 100%;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     color: #2D3B36;
-    margin: 378px 0px 0px;
+    text-align: center;
     text-transform: uppercase;
-    font-feature-settings: "case";
+    z-index: 1;
+}
 
+.MiddleSection {
+    position: relative;
+    z-index: 2;
+}
+
+.Girl {
+    width: 100%;
+    height: 676px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.Block {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 200px;
+    background-color: #EFF5E1;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    top: 520px;
+}
+
+.Block p {
+    font-family: "Inter", sans-serif;
+    color: #2D3B36;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.Block img {
+    width: 80px;
+    height: 80px;
+    border: 1px dotted black;
+    padding: 4px;
+    border-radius: 50px;
 }
 
 .LowerSection button {
@@ -76,60 +124,19 @@
     line-height: 100%;
     color: #EFF5E1;
     border-radius: 100px;
+    z-index: 3;
     position: absolute;
-    left: 100px;
-    margin-top: 243px;
-}
-
-.Girl {
-    position: absolute;
-    width: 610px;
-    height: 676px;
-    border-radius: 30px;
-    left: 655px;
-    right: 655px;
-}
-
-.Block {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: space-between;
-    width: 476px;
-    height: 100px;
-    border-radius: 200px;
-    background-color: #EFF5E1;
-    left: 740px;
-    right: 739px;
-    top: 546px
+    bottom: 50px;
+    left: 20px;
 }
 
 
-.Block p {
-    font-family: "Inter", sans-serif;
-    color: #2D3B36;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    margin-left: 132px;
-}
 
-.Block img {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 10px;
-    border: 1px solid black;
-    border-style: dotted;
-    padding: 4px;
-    border-radius: 50px;
-}
 
 @media (min-width: 320px) and (max-width:600px) {
     .MainSection {
         padding-top: 20px;
-
+        margin-bottom: 40px;
     }
 
     .UpperSection {
@@ -147,7 +154,6 @@
     .UpperSection h1 {
         font-size: 80px;
         margin-right: 0;
-
     }
 
     .LowerSection {
@@ -155,13 +161,34 @@
     }
 
     .LowerSection h1 {
-        font-size: 156px;
-        margin: 0;
+        display: none;
 
     }
 
     .LowerSection button {
-        display: none;
+        bottom: 0px;
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+        left: 120px;
+        bottom: 20px;
+    }
+
+    .Block {
+
+        padding: 20px;
+        right: 30px;
+    }
+
+    .Block p {
+        font-size: 10px;
+
+    }
+
+    .Block img {
+        width: 40px;
+        height: 40px;
+
     }
 
 
@@ -173,4 +200,20 @@
         flex-direction: column;
         gap: 30px;
     }
+
+    .LowerSection h1 {
+        display: none;
+
+    }
+
+    .Block {
+        top: 470px;
+        right: 0;
+    }
+
+    .LowerSection button {
+        left: 300px;
+        bottom: 20px;
+    }
 }
+
