@@ -1,263 +1,183 @@
 .MainSection {
     display: flex;
-    flex-direction: row;
-    padding: 300px 100px 200px 100px;
-    gap: 231px;
-    background-color: #FEFFF4;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 80px;
+    gap: 50px;
+    background-color: #fefff4;
+    width: 100%;
 }
 
-
-
-
-
 .LeftContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
+    flex: 1;
+    min-width: 300px;
 }
 
 .LeftContainer button {
+    position: relative;
     width: 260px;
     height: 60px;
-    background-color: #FEFFF4;
+    background-color: #fefff4;
     border-radius: 100px;
+    color: #2d3b36;
+    border: 1px solid #2d3b36;
+    margin-bottom: 70px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.LeftContainer button:hover {
     color: #2D3B36;
-    border: none;
-    border: 1px solid #2D3B36;
-    margin-bottom: 90px;
+    background-color: #EFF5E1;
+
 }
 
 .LeftContainer h1 {
     font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 100%;
-    letter-spacing: -2%;
-    color: #2D3B36;
+    font-weight: 600;
+    font-size: clamp(28px, 5vw, 60px);
+    line-height: 1.2;
+    color: #2d3b36;
     margin-bottom: 30px;
 }
 
 .LeftContainer h5 {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -2%;
+    line-height: 1.5;
     font-size: 18px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    color: #525349;
 }
 
 .Block {
     display: flex;
     flex-direction: row;
-    gap: 50px;
-
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
 .Block h2 {
     font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 100%;
-    letter-spacing: -2%;
-    background: linear-gradient(to bottom, #293330, #FEFFF4);
+    font-weight: 600;
+    font-size: 50px;
+    background: linear-gradient(to bottom, #293330, #fefff4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-
 }
 
 .Block h3 {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 100%;
-    letter-spacing: -2%;
-    color: #2D3B36;
-    margin-bottom: 50px;
+    font-size: clamp(20px, 4vw, 34px);
+    color: #2d3b36;
+    margin-bottom: 15px;
 }
 
 .Block p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -2%;
+    font-size: 16px;
+    line-height: 22px;
     color: #525349;
-    margin-bottom: 100px;
 }
 
-
-
-
-
 .RightContainer {
+    flex: 1;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 200px;
+    align-items: center;
 }
-
-
-
-
-
 
 .RightContainer img {
-    width: 849px;
-    height: 1081px;
-    border-radius: 30px;
-
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
+
 
 .Rectangle {
     position: absolute;
     display: flex;
-    background-color: #EFF5E1;
+    background-color: #eff5e1;
     border-radius: 200px;
-    width: 400px;
-    height: 100px;
+    width: 80%;
+    max-width: 400px;
+    height: 90px;
     justify-content: space-between;
     align-items: center;
-    gap: 41px;
-    left: 244px;
-    bottom: 81px;
+    padding: 0 20px;
+    bottom: 10%;
 }
 
-.dot {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #2D3B36;
+.Rectangle img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
     border-radius: 50%;
-    margin-left: 19px;
-    margin-top: -3px;
+    background-color: #2d3b36;
+    border: 1px dotted #2d3b36;
 }
 
 .Rectangle p {
     font-family: "Inter", sans-serif;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    font-weight: 400;
-    margin-right: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2d3b36;
 }
-
-.Rectangle img {
-    width: 60px;
-    height: 60px;
-    padding: 15px;
-    border-radius: 200px;
-    background-color: #2D3B36;
-    border: 1px solid #2D3B36;
-    border-style: dotted;
-    margin-left: 10px;
-}
-
 
 .RightContainer ul {
     display: flex;
     justify-content: space-between;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: -2%;
-    color: #2D3B36;
+    gap: 40px;
+    font-size: 16px;
+    color: #2d3b36;
     list-style: none;
-    margin-top: 30px;
+    margin-top: 20px;
 }
+
 
 
 @media (min-width: 320px) and (max-width:600px) {
     .MainSection {
-        display: flex;
-        flex-direction: column;
-        padding: 119px 0px 0px 0px;
-        gap: 0px;
-    }
-
-    .LeftContainer {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .LeftContainer button {
-        width: 218px;
-        height: 50px;
-        margin-bottom: 50px;
+        padding: 50px 20px;
     }
 
     .LeftContainer h1 {
-        font-size: 34px;
-        letter-spacing: -5%;
-        margin-bottom: 30px;
-    }
-
-    .LeftContainer h5 {
-        line-height: 22px;
-        font-size: 16px;
-        margin-bottom: 80px;
-    }
-
-    .Block {
-        gap: 27px;
-    }
-
-    .Block h2 {
-        font-family: "Inter", sans-serif;
-        font-size: 34px;
-    }
-
-    .Block h3 {
-        font-size: 34px;
-        margin-bottom: 20px;
-    }
-
-    .Block p {
-        font-size: 16px;
-        line-height: 21px;
-        margin-bottom: 60px;
-    }
-
-    .RightContainer {
-        margin-bottom: 150px;
+        font-size: 28px;
     }
 
     .RightContainer img {
+        display: block;
         width: 100%;
-        height: 512px;
-        border-radius: 0px;
+        height: auto;
+    }
 
+
+    .Block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
     }
 
     .Rectangle {
-        border-radius: 200px;
-        width: 302px;
-        height: 70px;
-        gap: 41px;
-        left: 50px;
-        bottom: 81px;
+        height: auto;
+        padding: 15px;
+        gap: 2px;
+        width: 100%;
+    }
+
+    .Rectangle p {
+        font-size: 16px;
+        text-align: center;
     }
 
     .Rectangle img {
-        width: 60px;
-        height: 60px;
-        padding: 15px;
-        border-radius: 200px;
-        margin-left: 10px;
-    }
-
-
-    .Rectangle p {
-        margin-right: 0px;
-        font-size: 16px;
-    }
-
-    .RightContainer ul {
-        margin-top: 20px;
+        width: 40px;
+        height: 40px;
     }
 
 
@@ -265,16 +185,19 @@
 
 @media (min-width: 601px) and (max-width:900px) {
     .MainSection {
-        display: flex;
         flex-direction: column;
-        padding: 100px 0 0;
-        gap: 20px;
-
+        padding: 100px 20px;
     }
 
-    .RightContainer img {
-        width: 100%;
-
+    .Rectangle {
+        bottom: 100px;
+        width: 90%;
+        height: 70px;
     }
+
+    .Rectangle p {
+        font-size: 14px;
+    }
+
 
 }
