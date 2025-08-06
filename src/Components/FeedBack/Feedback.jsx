@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Feedback.module.css";
 import Img from "./mathilde-langevin-p3O5f4u95Lo-unsplash 1 (1).png";
-import Head from "./headphone-svgrepo-com 1.png";
 
 const faqData = [
   {
@@ -40,10 +39,6 @@ const Feedback = () => {
     <div className={styles.MainSection}>
       <div className={styles.LeftSide}>
         <img src={Img} alt="cream" />
-        <div className={styles.Square}>
-          <img src={Head} alt="Headset" />
-          <p>24/7 We’re Here to Help You</p>
-        </div>
       </div>
       <div className={styles.RightSide}>
         <button>
