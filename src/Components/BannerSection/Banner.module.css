@@ -2,23 +2,23 @@
     display: flex;
     flex-direction: column;
     padding-top: 146px;
-    margin: 0;
     width: 100%;
     background-color: #EFF5E1;
 }
 
-
 .UpperSection {
     display: flex;
-    padding: 0px 100.39px 0px 100px;
+    padding: 0px 100px;
     justify-content: space-between;
     align-items: center;
     background-color: #EFF5E1;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .UpperSection img {
-    width: 222.61px;
-    height: 220px;
+    width: 220px;
+    height: auto;
     border-radius: 30px;
 }
 
@@ -26,10 +26,9 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0%;
+    line-height: 140%;
     color: #2D3B36;
-    text-indent: 105px;
+    text-indent: 60px;
 }
 
 .UpperSection h1 {
@@ -37,39 +36,33 @@
     font-weight: 700;
     font-size: 100px;
     line-height: 90px;
-    letter-spacing: -3%;
     color: #2D3B36;
-
+    text-align: center;
 }
-
 
 .LowerSection {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 100px;
+    margin-top: 80px;
     overflow: hidden;
     justify-content: center;
     align-items: center;
 }
 
 .LowerSection h1 {
-    position: absolute;
-    bottom: 400px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: "Inter", sans-serif;
     font-weight: 800;
-    font-size: clamp(200px, calc(12vw + 50px), 378px);
-    width: 100%;
-    line-height: 100%;
-    letter-spacing: 0;
+    font-size: clamp(150px, 15vw, 450px);
     color: #2D3B36;
-    text-align: center;
     text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    justify-content: center;
+    white-space: nowrap;
     z-index: 1;
 }
+
 
 .MiddleSection {
     position: relative;
@@ -82,32 +75,33 @@
     border-radius: 30px;
     position: relative;
     z-index: 2;
+
 }
 
 .Block {
     display: flex;
     align-items: center;
-    padding: 20px;
+    gap: 10px;
+    padding: 15px 20px;
     border-radius: 200px;
     background-color: #EFF5E1;
     z-index: 3;
     position: absolute;
-    right: 0;
-    top: 520px;
+    right: 20px;
+    bottom: 30px;
 }
 
 .Block p {
     font-family: "Inter", sans-serif;
     color: #2D3B36;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0;
+    font-size: 16px;
+    line-height: 120%;
 }
 
 .Block img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border: 1px dotted black;
     padding: 4px;
     border-radius: 50px;
@@ -116,104 +110,130 @@
 .LowerSection button {
     background-color: #2D3B36;
     font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
     border: none;
-    width: 180px;
-    height: 60px;
-    line-height: 100%;
+    width: 160px;
+    height: 50px;
     color: #EFF5E1;
     border-radius: 100px;
     z-index: 3;
     position: absolute;
-    bottom: 50px;
-    left: 20px;
+    bottom: 20px;
+    left: 10%;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.9);
 }
 
 
 
-
-@media (min-width: 320px) and (max-width:600px) {
+@media (max-width: 600px) {
     .MainSection {
-        padding-top: 20px;
-        margin-bottom: 40px;
+        padding-top: 40px;
     }
 
     .UpperSection {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        padding: 0px 30.39px 0px 30px;
+        padding: 0 20px;
+        text-align: center;
     }
 
     .UpperSection p {
-        margin-right: 0;
+        font-size: 14px;
+        text-indent: 0;
     }
 
     .UpperSection h1 {
-        font-size: 80px;
-        margin-right: 0;
+        font-size: 50px;
+        line-height: 1.1;
     }
 
-    .LowerSection {
-        margin-top: 30px;
+    .UpperSection img {
+        width: 160px;
+        height: auto;
     }
 
     .LowerSection h1 {
         display: none;
-
     }
 
     .LowerSection button {
-        bottom: 0px;
+        bottom: 15px;
         width: 120px;
-        height: 30px;
-        font-size: 10px;
-        left: 120px;
-        bottom: 20px;
+        height: 40px;
+        font-size: 14px;
+        left: 40%;
+        bottom: 20%;
+        transform: translateX(-50%);
     }
 
     .Block {
-
-        padding: 20px;
-        right: 30px;
+        right: 10%;
+        bottom: 4%;
     }
 
     .Block p {
-        font-size: 10px;
-
+        font-size: 12px;
     }
 
     .Block img {
         width: 40px;
         height: 40px;
-
     }
-
-
-
 }
 
-@media (min-width: 601px) and (max-width:900px) {
+@media (min-width: 601px) and (max-width: 900px) {
     .UpperSection {
         flex-direction: column;
-        gap: 30px;
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .UpperSection h1 {
+        font-size: 70px;
     }
 
     .LowerSection h1 {
         display: none;
-
-    }
-
-    .Block {
-        top: 470px;
-        right: 0;
     }
 
     .LowerSection button {
-        left: 300px;
-        bottom: 20px;
+        left: 40%;
+        bottom: 17%;
+        transform: translateX(-50%);
+    }
+
+    .Block {
+        right: 6%;
+        bottom: 2%;
     }
 }
 
+@media (min-width: 901px) and (max-width: 1200px) {
+    .UpperSection {
+        padding: 0 60px;
+    }
+
+    .UpperSection h1 {
+        font-size: 80px;
+    }
+
+    .LowerSection h1 {
+        font-size: clamp(150px, 10vw, 280px);
+    }
+
+    .LowerSection button {
+        left: 40%;
+        bottom: 20%;
+    }
+
+    .Block {
+        right: 10%;
+        bottom: 5%;
+    }
+
+    .LowerSection h1 {
+        display: none;
+    }
+}
