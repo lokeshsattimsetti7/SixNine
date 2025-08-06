@@ -1,36 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import Bag from "./bag-4-svgrepo-com 1.svg";
 import Heart from "./heart-svgrepo-com (1) 1.svg";
 import Search from "./Vector.svg";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <div className={styles.MainSection}>
+    <header className={styles.MainSection}>
       <div className={styles.SectionOne}>
         <h1>SKINCARE</h1>
       </div>
-      <div className={styles.SectionTwo}>
+      <nav className={styles.SectionTwo}>
         <ul>
           <li>All Products</li>
           <li>Serum</li>
           <li>Sunscreen</li>
           <li>Bundle</li>
         </ul>
-      </div>
+      </nav>
+
       <div className={styles.SectionThree}>
-        <button>
-          <img src={Bag} alt="bag" />
+        <button aria-label="Cart">
+          <img src={Bag} alt="Cart Icon" />
         </button>
-        <h2>Cart(1)</h2>
-        <button>
-          <img src={Heart} alt="heart" />
+        <h2>Cart (1)</h2>
+        <button aria-label="Favorites">
+          <img src={Heart} alt="Favorites Icon" />
         </button>
-        <button>
-          <img src={Search} alt="search" />
+        <button aria-label="Search">
+          <img src={Search} alt="Search Icon" />
         </button>
+
+        <div
+          className={`${styles.Hamburger} ${menuOpen ? styles.Open : ""}`}
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-    </div>
+
+      {menuOpen && (
+        <div className={styles.MobileMenu}>
+          <ul>
+            <li onClick={closeMenu}>All Products</li>
+            <li onClick={closeMenu}>Serum</li>
+            <li onClick={closeMenu}>Sunscreen</li>
+            <li onClick={closeMenu}>Bundle</li>
+          </ul>
+        </div>
+      )}
+    </header>
   );
 };
 
