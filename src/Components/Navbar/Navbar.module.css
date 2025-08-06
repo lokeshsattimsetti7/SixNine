@@ -5,14 +5,14 @@
     align-items: center;
     justify-content: space-between;
     background-color: #EFF5E1;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .SectionOne h1 {
     font-family: "Inter", sans-serif;
     font-weight: 800;
     font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 0%;
     text-transform: uppercase;
     color: #2D3B36;
 }
@@ -23,11 +23,11 @@
     list-style: none;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    size: 20px;
-    text-decoration: none;
-    line-height: 100%;
-    letter-spacing: 5%;
+    font-size: 20px;
+    letter-spacing: 0.05em;
     color: #2D3B36;
+    margin: 0;
+    padding: 0;
 }
 
 .SectionThree {
@@ -40,9 +40,7 @@
 .SectionThree h2 {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    size: 20px;
-    line-height: 100%;
-    letter-spacing: -5%;
+    font-size: 20px;
     color: #2D3B36;
 }
 
@@ -51,16 +49,94 @@
     background-color: #F8FEE5;
     width: 40px;
     height: 40px;
-    border-radius: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
+
+.SectionThree button img {
+    width: 18px;
+    height: 18px;
+}
+
+.Hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.Hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #2D3B36;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.Open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.Open span:nth-child(2) {
+    opacity: 0;
+}
+
+.Open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.MobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #EFF5E1;
+    padding: 20px;
+    text-align: center;
+    animation: slideDown 0.4s ease forwards;
+}
+
+.MobileMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #2D3B36;
+}
+
+.MobileMenu li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 @media (min-width: 320px) and (max-width:600px) {
     .MainSection {
-        padding: 30px 30px 98px 30px;
-    }
-
-    .SectionOne h1 {
-        font-size: 20px;
+        padding: 20px;
+        flex-direction: row;
     }
 
     .SectionTwo ul {
@@ -70,20 +146,25 @@
     .SectionThree h2 {
         display: none;
     }
+
+    .Hamburger {
+        display: flex;
+    }
 }
 
 @media (min-width: 601px) and (max-width:900px) {
     .MainSection {
-        padding: 40px 50px 0px;
+        padding: 40px 30px 0px;
+        justify-content: space-between;
     }
 
     .SectionOne h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .SectionTwo ul {
-        gap: 30px;
-        size: 14px;
+        gap: 10px;
+        font-size: 12px;
     }
 
     .SectionThree h2 {
@@ -100,9 +181,21 @@
 
 @media (min-width: 901px) and (max-width:1200px) {
     .MainSection {
-        width: 100%;
         padding: 50px 50px 0px;
+    }
 
+    .SectionTwo ul {
+        display: flex;
+        gap: 31px;
+    }
+
+    .SectionOne h1 {
+        font-size: 25px;
+    }
+
+    .SectionTwo ul {
+        gap: 10px;
+        font-size: 18px;
     }
 
 }
