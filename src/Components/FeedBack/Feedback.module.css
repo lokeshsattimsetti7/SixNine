@@ -3,6 +3,8 @@
     padding: 0px 197px 150px 100px;
     gap: 150px;
     background-color: #FEFFF4;
+    align-items: center;
+    width: 100%;
 }
 
 .Mobile {
@@ -14,48 +16,19 @@
 }
 
 .LeftSide img {
-    width: 850px;
-    height: 900px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+    object-fit: cover;
 }
 
-.Square {
-    position: absolute;
-    display: flex;
-    background-color: #EFF5E1;
-    border-radius: 200px;
-    width: 306px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    gap: 41px;
-    left: 225px;
-    bottom: 39px;
-}
 
-.Square p {
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    font-weight: 400;
 
-}
-
-.Square img {
-    width: 50px;
-    height: 50px;
-    padding: 15px;
-    border-radius: 200px;
-    background-color: #2D3B36;
-    border: 1px solid #2D3B36;
-    border-style: dotted;
-    margin-left: 10px;
-}
 
 .RightSide {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .RightSide button {
@@ -64,9 +37,15 @@
     background-color: #FEFFF4;
     border-radius: 100px;
     color: #2D3B36;
-    border: none;
     border: 1px solid #2D3B36;
     margin-bottom: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.RightSide button:hover {
+    background-color: #2D3B36;
+    color: #EFF5E1;
 }
 
 .RightSide h1 {
@@ -77,9 +56,6 @@
     letter-spacing: 2%;
     color: #2D3B36;
 }
-
-
-
 
 .BoxSection {
     display: flex;
@@ -94,6 +70,10 @@
     padding: 27px 30px;
     transition: all 0.3s ease;
     cursor: pointer;
+}
+
+.BorderBox:hover {
+    background-color: #f5f9f5;
 }
 
 .Question {
@@ -135,80 +115,103 @@
     }
 }
 
-@media (min-width: 320px) and (max-width:600px) {
+@media (min-width: 320px) and (max-width: 600px) {
     .MainSection {
         flex-direction: column-reverse;
-        padding: 0px;
-        gap: 100px;
-    }
-
-    .LeftSide {
-        position: relative;
+        padding: 0;
+        gap: 60px;
     }
 
     .LeftSide img {
         width: 100%;
         height: 475px;
-
     }
 
-    .Square {
 
-        width: 250px;
-        height: 70px;
-        gap: 41px;
-        left: 76px;
-        bottom: 39px;
-    }
-
-    .Square img {
-        width: 30px;
-        height: 30px;
-        padding: 15px;
-        margin-left: 10px;
-    }
 
     .RightSide {
-        display: flex;
-        flex-direction: column;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 0 20px;
     }
 
     .RightSide button {
-        width: 242px;
-        height: 50px;
-        background-color: #FEFFF4;
+        width: 220px;
+        height: 48px;
         margin-bottom: 50px;
+        font-size: 16px;
     }
 
     .RightSide h1 {
-        font-size: 34px;
-        line-height: 100%;
-
+        font-size: 32px;
+        text-align: center;
     }
 
     .BoxSection {
-        gap: 10px;
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
     .BorderBox {
-        border: 1px solid #2D3B36;
-        border-radius: 5px;
         padding: 14px;
     }
 
     .Question {
         font-size: 14px;
-
     }
 
     .Answer {
-        margin-top: 20px;
         font-size: 12px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .MainSection {
+        flex-direction: column;
+        padding: 40px;
+        gap: 80px;
+    }
+
+    .LeftSide img {
+        height: 550px;
+    }
+
+
+    .RightSide button {
+        width: 240px;
+        height: 55px;
+        margin-bottom: 70px;
+        font-size: 18px;
+    }
+
+    .RightSide h1 {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .BoxSection {
+        margin-top: 70px;
+    }
+}
+
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .MainSection {
+        padding: 50px 80px 120px;
+        gap: 100px;
+    }
+
+    .LeftSide img {
+        height: 650px;
     }
 
 
 
+    .RightSide button {
+        width: 250px;
+        height: 58px;
+        margin-bottom: 90px;
+        font-size: 19px;
+    }
+
+    .RightSide h1 {
+        font-size: 52px;
+    }
 }
