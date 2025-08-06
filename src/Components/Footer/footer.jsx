@@ -5,12 +5,14 @@ const footer = () => {
     <div className={styles.MainSection}>
       <div className={styles.LeftContainer}>
         <div>
-          <h1>Join The Skincare Community Now.</h1>
+          <h1>
+            Join The Skincare <br /> Community Now.
+          </h1>
         </div>
         <ul>
           <li>Facebook</li>
           <li>Instagram</li>
-          <li>YouTube</li>
+          <li>YT</li>
         </ul>
       </div>
       <div className={styles.RightContainer}>
