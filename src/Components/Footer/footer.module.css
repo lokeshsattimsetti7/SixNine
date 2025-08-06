@@ -1,41 +1,37 @@
 .MainSection {
     width: 100%;
-    height: 930px;
-    gap: 651px;
+    height: 100%;
+    /* gap: 651px; */
+    justify-content: space-between;
     display: flex;
-    flex-direction: row;
     background-color: #2D3B36;
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
+    padding: 200px 100px;
 }
 
 .LeftContainer {
     display: flex;
     flex-direction: column;
     gap: 270px;
-    padding-left: 100px;
-    padding-top: 200px;
-    padding-bottom: 328px;
 }
 
 .LeftContainer h1 {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 100%;
-    letter-spacing: -2%;
     color: #E7E8E0;
-    margin: 0px;
-
+    margin: 0;
 }
 
 .LeftContainer ul {
     list-style: none;
     display: flex;
     gap: 93px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     justify-content: space-between;
 }
 
@@ -43,218 +39,230 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 100%;
-    letter-spacing: -5%;
     color: #E7E8E0;
-
 }
 
 .RightContainer {
     display: flex;
     flex-direction: column;
-    gap: 300px;
-    padding-right: 100px;
-    padding-top: 200px;
-    padding-bottom: 328px;
+    gap: 265px;
 }
 
 .RightContainer h2 {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 30px;
-    line-height: 100%;
-    letter-spacing: -2%;
     color: #E7E8E0;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 .RightContainer p {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 60px;
-    line-height: 100%;
-    letter-spacing: -2%;
     color: #E7E8E0;
-    margin-top: 0px;
-}
-
-.RightContainer ul li {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: -5%;
-    color: #E7E8E0;
-
+    margin: 0;
 }
 
 .RightContainer ul {
     list-style: none;
     display: flex;
     gap: 93px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     justify-content: space-between;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.FirstRow {
-    display: flex;
-    padding: 200px 100px 270px 100px;
-    gap: 651px;
-}
-
-
-
-.FirstRow h2 {
+.RightContainer ul li {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: -2%;
+    font-size: 16px;
     color: #E7E8E0;
-    margin-bottom: 0px;
-}
-
-.FirstRow p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 100%;
-    letter-spacing: -2%;
-    color: #E7E8E0;
-    margin-top: 0px;
-}
-
-.Media {
-    display: flex;
-    gap: 651px;
-    padding: 0px 100px;
-}
-
-.Media ul {
-    list-style: none;
-    display: flex;
-    gap: 93px;
-    margin: 0px;
-    padding: 0px;
-    justify-content: space-between;
-    /* margin-bottom: 100px; */
-}
-
-.Media ul li {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: -5%;
-    color: #E7E8E0;
-
 }
 
 .LastTxt {
     position: absolute;
     bottom: -120px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    /* ensures big text doesn't overflow horizontally */
 }
 
 .LastTxt h6 {
     font-family: "Inter", sans-serif;
-    font-size: 400px;
     font-weight: 700;
     line-height: 100%;
-    letter-spacing: 0%;
     color: #3D4B4680;
-    align-items: center;
-    justify-content: center;
-
-
-
-
+    text-align: center;
+    font-size: clamp(120px, 20vw, 400px);
 }
 
-@media (min-width: 320px) and (max-width:600px) {
-    .MainSection {
-        display: flex;
-        flex-direction: column;
-        height: 550px;
-        gap: 29px;
-        width: 100%;
 
+@media (min-width: 320px) and (max-width: 600px) {
+    .MainSection {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+        padding: 40px 20px;
     }
 
     .LeftContainer {
-        gap: 80px;
-        padding-left: 30px;
-        padding-top: 50px;
-        padding-right: 20px;
-        padding-bottom: 0px;
+        gap: 60px;
+        padding: 20px;
     }
 
     .LeftContainer h1 {
         font-size: 34px;
-
-
     }
 
     .LeftContainer ul {
-        gap: 74px;
+        gap: 40px;
+        flex-wrap: wrap;
     }
 
     .LeftContainer ul li {
         font-size: 14px;
     }
 
-
-
     .RightContainer {
-        gap: 80px;
-        padding-left: 30px;
-        padding-top: 50px;
-        padding-right: 30px;
-        padding-bottom: 0px;
+        gap: 60px;
     }
 
     .RightContainer h2 {
         font-size: 14px;
-        margin-bottom: 0px;
     }
 
     .RightContainer p {
         font-size: 34px;
-
-    }
-
-    .RightContainer ul li {
-        font-size: 10px;
-
     }
 
     .RightContainer ul {
-        gap: 84px;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .RightContainer ul li {
+        font-size: 12px;
+    }
+
+    .LastTxt {
+        bottom: -20px;
     }
 
     .LastTxt h6 {
         font-size: 70px;
     }
+}
 
-    .LastTxt {
-        position: absolute;
-        bottom: -30px;
+/* ---------- Tablet (601px–900px) ---------- */
+@media (min-width: 601px) and (max-width: 900px) {
+    .MainSection {
+        flex-direction: column;
+        height: auto;
+        gap: 80px;
+        padding: 60px 40px;
     }
 
+    .LeftContainer {
+        gap: 100px;
+    }
+
+    .LeftContainer h1 {
+        font-size: 44px;
+    }
+
+    .LeftContainer ul {
+        gap: 60px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .LeftContainer ul li {
+        font-size: 16px;
+    }
+
+    .RightContainer {
+        gap: 100px;
+    }
+
+    .RightContainer h2 {
+        font-size: 18px;
+    }
+
+    .RightContainer p {
+        font-size: 40px;
+    }
+
+    .RightContainer ul {
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+
+    .RightContainer ul li {
+        font-size: 14px;
+    }
+
+    .LastTxt {
+        bottom: -40px;
+    }
+
+    .LastTxt h6 {
+        font-size: 150px;
+    }
+}
 
 
+@media (min-width: 901px) and (max-width: 1200px) {
+    .MainSection {
+        flex-direction: row;
+        height: auto;
+        gap: 200px;
+        padding: 80px;
+    }
+
+    .LeftContainer {
+        gap: 120px;
+    }
+
+    .LeftContainer h1 {
+        font-size: 42px;
+    }
+
+    .LeftContainer ul {
+        gap: 70px;
+    }
+
+    .LeftContainer ul li {
+        font-size: 18px;
+    }
+
+    .RightContainer {
+        gap: 120px;
+    }
+
+    .RightContainer h2 {
+        font-size: 18px;
+    }
+
+    .RightContainer p {
+        font-size: 48px;
+    }
+
+    .RightContainer ul {
+        gap: 70px;
+    }
+
+    .RightContainer ul li {
+        font-size: 15px;
+    }
+
+    .LastTxt {
+        bottom: -60px;
+        left: 0;
+    }
+
+    .LastTxt h6 {
+        font-size: 250px;
+    }
 }
