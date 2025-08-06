@@ -6,7 +6,10 @@ const Banner = () => {
     <div className={styles.MainSection}>
       <img src={banner} alt="banner" />
       <div className={styles.TxtSection}>
-        <p>Feel Beautiful Inside and Out with Every Product.</p>
+        <p>
+          Feel Beautiful Inside and Out <br />
+          with Every Product.
+        </p>
         <button>Shop Now</button>
       </div>
     </div>
